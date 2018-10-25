@@ -124,6 +124,11 @@ z-index:100000;
     border-color: transparent;
     background-color: transparent;
   }
+  
+  .retrait {
+	  margin-top: 0 !important;
+  }
+  
   #mainNav .navbar-brand {
     color: fade(none, 70%);
   }
@@ -197,6 +202,11 @@ header.masthead .header-content h1 {
 	header.masthead {
 	height:80vh;
 	}
+	
+	.retrait {
+	  display:none;
+	  
+  }
 	
 	.butterflyContainer{
 		margin-top:-45vh !important;
@@ -514,31 +524,50 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 	color:white !important;
 }
 
-.godimage {
-	position:absolute;
-    margin: auto; 
-    min-height: 100%;
-    min-width: 100%;
-	
-	top:0;
-	left:0;
-	
-}
 
 .goddess {
 	overflow: hidden;
 	overflow-x:hidden;
 	z-index:-1000;
-	position:relative;
-	top:-250px;
-	left:-400px;
-	float:left;
+	position:absolute;
+	margin-top:-190px !important;	
+	float:right;
+}
+
+@media (max-width:360px) {
+	.buildingtext
+	{
+		text-align:center !important;
+		margin-top:-50%;
+		
+	}
+	
+	.goddess {
+		
+		display:none;
+	}
 }
 
 @media (max-width: 992px) {
-	.goddess {
-		display:none;
+	.cta-content {
+		margin-top:-100px;
 	}
+	
+	.cta {
+		
+		height:80%;
+	}
+	
+	.goddess{
+		margin-top:-33vh !important;
+	}
+	
+	.godimage {
+	margin-top:50%;
+	min-width:400px;
+	width:104%;
+	height:auto;
+}
 	
 	.ameka {
 		margin-top:60vh !important;
@@ -632,4 +661,22 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 	position:absolute !important;
 	width:100%;
 
+}
+
+.goddess {
+	max-width:54%;
+	height:100%;
+	margin-left:50%;
+}
+
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+	  
+	  .goddess {
+	max-width:51%;
+	height:100%;
+	margin-left:50%;
+}
 }
